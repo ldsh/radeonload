@@ -14,7 +14,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include "radeontop.h"
+#include "radeonload.h"
 #include <ncurses.h>
 #include <stdarg.h>
 
@@ -98,7 +98,7 @@ void present(const unsigned int ticks, const char card[], const unsigned int col
 
 	attron(A_REVERSE);
 	mvhline(0, 0, ' ', w);
-	printcenter(0, w, _("radeontop %s, running on %s, %u samples/sec"),
+	printcenter(0, w, _("radeonload %s, running on %s, %u samples/sec"),
 			VERSION, card, 	ticks);
 	attroff(A_REVERSE);
 

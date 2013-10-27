@@ -10,7 +10,7 @@ INSTALL ?= install
 
 nls ?= 1
 
-bin = radeontop
+bin = radeonload
 src = $(wildcard *.c)
 obj = $(src:.c=.o)
 verh = include/version.h
@@ -61,18 +61,18 @@ $(verh): .git
 	./getver.sh
 
 trans:
-	xgettext -o translations/radeontop.pot -k_ *.c \
-	--package-name radeontop
+	xgettext -o translations/radeonload.pot -k_ *.c \
+	--package-name radeonload
 
 install: all
 	$(INSTALL) -D -m755 $(bin) $(DESTDIR)/$(PREFIX)/sbin/$(bin)
-	$(INSTALL) -D -m644 radeontop.1 $(DESTDIR)/$(PREFIX)/share/man/man1/radeontop.1
+	$(INSTALL) -D -m644 radeonload.1 $(DESTDIR)/$(PREFIX)/share/man/man1/radeonload.1
 ifeq ($(nls), 1)
 	$(MAKE) -C translations install PREFIX=$(PREFIX)
 endif
 
 man:
-	a2x -f manpage radeontop.asc
+	a2x -f manpage radeonload.asc
 
 dist: ver = $(shell git describe)
 dist: name = $(bin)-$(ver)

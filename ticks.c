@@ -14,7 +14,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include "radeontop.h"
+#include "radeonload.h"
 #include <pthread.h>
 
 struct bits_t *results = NULL;
