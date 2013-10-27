@@ -1,3 +1,5 @@
+# ! Forked from radeontop and modified by ldsh on 27 october 2013 !
+
 # The make-provided flags like MAKE and CC aren't set, on purpose.
 # This is Linux-specific software, so we can depend on GNU make.
 

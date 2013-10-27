@@ -3,10 +3,12 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# ! Forked from radeontop and modified  by ldsh on 27 october 2013 !
+#
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: radeontop\n"
+"Project-Id-Version: radeonload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-07-11 15:00+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -54,11 +56,11 @@ msgstr ""
 msgid "Can't open file for writing."
 msgstr ""
 
-#: radeontop.c:37
+#: radeonload.c:37
 #, c-format
 msgid ""
 "\n"
-"\tRadeonTop for R600 and above.\n"
+"\tRadeonLoad for R600 and above.\n"
 "\n"
 "\tUsage: %s [-ch] [-b bus] [-d file] [-l limit] [-t ticks]\n"
 "\n"
@@ -72,7 +74,7 @@ msgid ""
 "-v --version\t\tShow the version\n"
 msgstr ""
 
-#: radeontop.c:122
+#: radeonload.c:122
 msgid "Unknown Radeon card. <= R500 won't work, new cards might."
 msgstr ""
 
@@ -83,7 +85,7 @@ msgstr ""
 
 #: ui.c:101
 #, c-format
-msgid "radeontop %s, running on %s, %u samples/sec"
+msgid "radeonload %s, running on %s, %u samples/sec"
 msgstr ""
 
 #: ui.c:133
