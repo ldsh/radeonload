@@ -1,7 +1,7 @@
 RadeonLoad
 =========
 
-Just a quick fork to play around, please go to the main project page
+Just a quick fork to play around, please go to the main project page: https://github.com/clbr/radeontop
 
 The aim is to have instant information of the GPU load to use in conky and on dynamic frequency changing for power saving.
 
