@@ -3,8 +3,8 @@ RadeonLoad
 
 Just a quick fork to play around, please go to the main project page: https://github.com/clbr/radeontop
 
-The aim is to have instant information of the GPU load to use in conky and on dynamic frequency changing for power saving.
-
+The aim is to have information of the GPU load to use in conky.
+See wiki pages for how I use it.
 
 Be aware that I'm an early beginner in c. This code may be unstable.
 
