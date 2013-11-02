@@ -30,7 +30,7 @@ static void sighandler(int sig) {
 	}
 }
 
-void dumpdata(const unsigned int ticks, const char file[], const unsigned int limit) {
+void instantdata(const unsigned int ticks, const char file[], const unsigned int limit) {
 
 #ifdef ENABLE_NLS
 	// This is a data format, so disable decimal point localization
@@ -57,7 +57,7 @@ void dumpdata(const unsigned int ticks, const char file[], const unsigned int li
 	if (file[0] == '-')
 		f = stdout;
 	else
-		f = fopen(file, "a");
+		f = fopen(file, "w+");
 
 	if (!f)
 		die(_("Can't open file for writing."));
@@ -74,6 +74,8 @@ void dumpdata(const unsigned int ticks, const char file[], const unsigned int li
 		struct timeval t;
 		gettimeofday(&t, NULL);
 
+		rewind(f);
+		
 		fprintf(f, "%llu.%llu: ", (unsigned long long) t.tv_sec,
 				(unsigned long long) t.tv_usec);
 
@@ -122,7 +124,7 @@ void dumpdata(const unsigned int ticks, const char file[], const unsigned int li
 		// Did we get a termination signal?
 		if (quit)
 			break;
-
+			
 		sleep(1);
 	}
 

@@ -63,6 +63,9 @@ void present(const unsigned int ticks, const char card[], const unsigned int col
 // dump.c
 void dumpdata(const unsigned int ticks, const char file[], const unsigned int limit);
 
+// instant.c
+void instantdata(const unsigned int ticks, const char file[], const unsigned int limit);
+
 // chips
 enum radeon_family {
 	UNKNOWN_CHIP,
