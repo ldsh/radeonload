@@ -8,6 +8,7 @@ See wiki pages for how I use it.
 
 Be aware that I'm an early beginner in c. This code may be unstable.
 
+This repository is not maintained, I just keep it in case someone would be interested in picking some part of the code.
 
 Requires root rights or other permissions to /dev/mem.
 
